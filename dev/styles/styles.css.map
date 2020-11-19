@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/_nav.scss","styles.css"],"names":[],"mappings":"AAAA;EAEI,aAAA;ACAJ","file":"styles.css","sourcesContent":["#deskHead{\n\n    display: none;\n}\n\n","#deskHead {\n  display: none;\n}"]}
