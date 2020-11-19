@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Food Explorer</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
 
@@ -18,23 +16,51 @@
 <body>
 	<header>
 <!-- Put your HTML code here... -->
-		<h1>Food Explorer</h1>
-		<a href="#" class="fa fa-facebook"></a>
-		<a href="#" class="fa fa-google"></a>
-		<a href="#" class="fa fa-twitter"></a>
-		<div>
-			<nav>
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Reviews</a></li>
-					<li><a href="">Recipes</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</nav>
+		<div class="mobNav">
+			<img src="images/small-logo.jpg" alt="Food Explorer Logo">
+			<div id="mobLinks">
+				<div class="mobSearch">
+					<input type="text" placeholder="Search..">
+					<img src="images/search.png" alt="Search Button">
+				</div>
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Reviews</a></li>
+						<li><a href="">Recipes</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="mobSocial">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-twitter"></a>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <!--Include JS and edit line accordingly-->
+			<img src="images/menu.png" alt="Menu">
+			</a>
+		</div>
+		<div class="deskHead">
+			<h1>Food Explorer</h1>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Reviews</a></li>
+						<li><a href="">Recipes</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 			<div class="search">
 				<input type="text" placeholder="Search..">
-				<button type="submit"><i class="fa fa-search"></i></button>
+				<img src="images/search.png" alt="Search Button">
 			</div>
 		</div>
 	</header>
@@ -49,10 +75,10 @@
 		</div>
 		<div>
 			<h3>Latest Recipes</h3>
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
+			<img src="images/lamb-tb.jpg" alt="Lamb Dinner">
+			<img src="images/breakfast-tb.jpg" alt="Breakfast Plate">
+			<img src="images/calamari-tb.jpg" alt="Calamari Dinner">
+			<img src="images/steak-tb.jpg" alt="Steak Dinner">
 		</div>
 		<div>
 			<h3>Cuisines</h3>
