@@ -1,5 +1,19 @@
 // Place your Sass imports here...
-@import "components/nav";
-@import "components/main";
-@import "components/header";
-@import "components/footer";
+
+// Variables
+
+@import "variables";
+
+// Resets
+
+@import "mixins";
+@import "reset";
+
+// HTML Components
+
+@import "nav";
+@import "main";
+@import "header";
+@import "footer";
+@import "wrapper";
+

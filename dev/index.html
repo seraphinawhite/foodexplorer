@@ -14,10 +14,16 @@
 	<link rel="stylesheet" href="styles/styles.css?cb=1">
 </head>
 <body>
+	<div class="wrapper">
 	<header>
 <!-- Put your HTML code here... -->
 		<div class="mobNav">
-			<img src="images/small-logo.jpg" alt="Food Explorer Logo">
+			<a href="index.html">
+				<picture>
+					<source media="(max-width: 360px)" srcset="images/small-logo.jpg">
+					<img src="images/logo.png" alt="Food Explorer Logo">
+				</picture>
+			</a>
 			<div id="mobLinks">
 				<div class="mobSearch">
 					<input type="text" placeholder="Search..">
@@ -43,7 +49,6 @@
 			</a>
 		</div>
 		<div class="deskHead">
-			<h1>Food Explorer</h1>
 			<a href="#" class="fa fa-facebook"></a>
 			<a href="#" class="fa fa-google"></a>
 			<a href="#" class="fa fa-twitter"></a>
@@ -129,11 +134,12 @@
 
 
 
-
+</div>
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 <script src="scripts/script.min.js?cb=1"></script>
-<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
+<!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
+	
 </body>
 </html>
