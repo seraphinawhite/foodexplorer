@@ -1,5 +1,32 @@
-.wrapper{
+// .wrapper{
 
-    margin: 0 auto;
-    max-width: $siteWidth;
+//     @media( min-width: $desktop) {
+//     margin: $centerMargin;
+//     max-width: $siteWidth;
+// }
+// }
+
+.food-wrap{
+
+    background: white;
+    margin: $centerMargin;
+    margin: 10px;
+
+}
+
+
+.cuisine-wrap{
+
+    background-color: white;
+    margin: $centerMargin;
+
+    margin: 10px;
+    
+}
+
+.recipe-wrap, .banner-food{
+
+    margin: $centerMargin;
+    margin: 10px;
+
 }

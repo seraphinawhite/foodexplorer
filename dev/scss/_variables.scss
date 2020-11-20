@@ -1,7 +1,9 @@
-$lightblue: #1a71a9 ;
-$darkblue: #005991;
+// Colors
+$lightBlue: #1a71a9 ;
+$darkBlue: #005991;
+$lightGrey: #e9e9e9;
 
-// dimensions
+// Dimensions
 
 $siteWidth: 1000px;
 
@@ -11,3 +13,17 @@ $tabletSmall: 500px; //hamburger menu disappears food explorer then search bar w
 $tabletMedium: 670px; // 3 top pictures go from column to grid
 $tabletLarge:700px; // socials appear to the right of search bar
 $desktop: 770px; // go to desktop view 
+
+// Fonts
+
+$bodyFont:'Roboto', sans-serif;
+$headingFont: 'Roboto Condensed', sans-serif;
+$navFont: 'Roboto Condensed', sans-serif;
+
+// Wrapper Width 
+
+$mobileWrapperSmall: 300px; 
+$centerMargin: 0 auto;
+ 
+
+            

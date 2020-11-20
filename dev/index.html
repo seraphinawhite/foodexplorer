@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
-
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<!-- end Google Fonts -->
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
@@ -15,126 +16,164 @@
 </head>
 <body>
 	<div class="wrapper">
-	<header>
-<!-- Put your HTML code here... -->
-		<div class="mobNav">
-			<div class="head">
-				<a href="index.html">
-					<picture>
-						<source media="(max-width: 360px)" srcset="images/small-logo.jpg">
-						<img src="images/logo.png" alt="Food Explorer Logo">
-					</picture>
-				</a>
-			<div class="">
-				<div class="mobile-search">
+		<header>
+	<!-- Put your HTML code here... -->
+			<div class="mobNav">
+				<div class="head">
+					<a href="index.html">
+						<picture>
+							<source media="(max-width: 360px)" srcset="images/small-logo.jpg">
+							<img src="images/logo.png" alt="Food Explorer Logo">
+						</picture>
+					</a>
+				<div class="search-bar">
+					<div class="search-bar mobile-search">
+						<input type="text" placeholder="Search.." >
+						<img src="images/search.png" alt="Search Button">
+					</div>
+
+					<div class="social-links social-links-mobile">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-google"></a>
+						<a href="#" class="fa fa-twitter"></a>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Reviews</a></li>
+							<li><a href="">Recipes</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="social-links social-links-mobile">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-google"></a>
+						<a href="#" class="fa fa-twitter"></a>
+					</div>
+
+					<!-- <a href="javascript:void(0);" class="btn-main-nav" id="btn-main-nav" onclick="myFunction()"> Include JS and edit line accordingly -->
+						<img src="images/menu.png" alt="Menu">
+						</a>
+				</div>
+
+			</div>
+			<!-- <div class="deskHead">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<div>
+					<nav>
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Reviews</a></li>
+							<li><a href="">Recipes</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="search">
 					<input type="text" placeholder="Search..">
 					<img src="images/search.png" alt="Search Button">
 				</div>
-				<div class="social-links social-links-mobile">
-					<a href="#" class="fa fa-facebook"></a>
-					<a href="#" class="fa fa-google"></a>
-					<a href="#" class="fa fa-twitter"></a>
+			</div> -->
+		</header>
+		<main>
+			<div class="banner-food">
+				<div class="food-one">
+					<img src="images/mussel-small.jpg" alt="Mussels">
+					<p>Lorem Ipsumdolor Sit</p>
 				</div>
-				<nav>
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Reviews</a></li>
-						<li><a href="">Recipes</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>
-				</nav>
-				<div class="social-links social-links-mobile">
-					<a href="#" class="fa fa-facebook"></a>
-					<a href="#" class="fa fa-google"></a>
-					<a href="#" class="fa fa-twitter"></a>
+				<div class="food-two">
+					<img src="images/salad.jpg" alt="Salad">
+					<p>Lorem, Ipsum Dolor</p>
 				</div>
-
-				<!-- <a href="javascript:void(0);" class="btn-main-nav" id="btn-main-nav" onclick="myFunction()"> Include JS and edit line accordingly -->
-					<img src="images/menu.png" alt="Menu">
-					</a>
+				<div class="food-three">
+					<img src="images/pancake.jpg" alt="Pancakes">
+					<p>Sit Amet Consectetur</p>
+				</div>
 			</div>
+			
+				<div class="recipe-wrap">
+					<div class="recipe-title">
+						<h3>Latest Recipes</h3>
+					</div>
+					<div class="recipe-one">
+						<img src="images/lamb-tb.jpg" alt="Lamb Dinner">
+						<p>Met consectetur elit</p>
+					</div>
+					<div class="recipe-two">
+						<img src="images/breakfast-tb.jpg" alt="Breakfast Plate">
+						<p>Archi Tecto Dolores</p>
+					</div>
+					<div class="recipe-three">
+						<img src="images/calamari-tb.jpg" alt="Calamari Dinner">
+						<p>Mexpe Dita Ciatis</p>
+					</div>
+					<div class="recipe-four">
+						<img src="images/steak-tb.jpg" alt="Steak Dinner">
+						<p>Fugiat Eaque Aore</p>
+					</div>
+				</div>
+			<div class="cuisine-wrap">
+				<div class="cuisine-content">
+					<div class="cuisine-title">
+						<h3>Cuisines</h3>
+					</div>
+					<div class="cuisines">
+						<div class="cuisine-one">
+							<p>American (95)</p>
+							<p>Cambodian (3)</p>
+							<p>Filipino (8)</p>
+							<p>German (7)</p>
+							<p>Indian (44)</p>
+							<p>Jamaican (7)</p>
+							<p>Korean (120)</p>
+							<p>Mediterranean (9)</p>
+							<p>Southern (14)</p>
+						</div>	
+						<div class="cuisine-two">
+							<p>Asian (33)</p>
+							<p>Chinese (281)</p>
+							<p>French (40)</p>
+							<p>Greek (29)</p>
+							<p>Italian (60)</p>
+							<p>Japanese (202)</p>
+							<p>Malaysian (12)</p>
+							<p>Mexican (25)</p>
 
+						</div>
+					</div>
+				</div>
 		</div>
-		<!-- <div class="deskHead">
-			<a href="#" class="fa fa-facebook"></a>
-			<a href="#" class="fa fa-google"></a>
-			<a href="#" class="fa fa-twitter"></a>
+			<div class="food-wrap">
+				<div class="food-content">
+					<h2>Lorem Ipsum Dolor Sit Amet</h2>
+					<p class="sub-title">Posted by Mike Lee on Sunday, August 25, 2013</p>
+					<img src="images/pasta.jpg" alt="Seafood Pasta">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt nisi eius asperiam sint.</p>
+					<button id="myBtn">Read more...</button>
+				</div>
+			</div>
+			<div class="food-wrap">
+				<div class="food-content">
+					<h2>Vel, Eaque Quisquam Sit Amet</h2>
+					<p class="sub-title">Posted by Mike Lee on Monday, July 29, 2013</p>
+					<img src="images/ramen.jpg" alt="Ramen Soup">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt nisi eius asperiam sint.</p>
+					<button id="myBtn">Read more...</button>
+				</div>
+			</div>
 			<div>
-				<nav>
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Reviews</a></li>
-						<li><a href="">Recipes</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>
-				</nav>
+			<a>
+				<img src="images/previous-btn.png" alt="Older Posts Button" class="previous-btn">
+			</a>
 			</div>
-			<div class="search">
-				<input type="text" placeholder="Search..">
-				<img src="images/search.png" alt="Search Button">
-			</div>
-		</div> -->
-	</header>
-	<main>
-		<div>
-			<img src="images/mussel.jpg" alt="Mussels">
-			<p>Lorem Ipsumdolor Sit</p>
-			<img src="images/salad.jpg" alt="Salad">
-			<p>Lorem, Ipsum Dolor</p>
-			<img src="images/pancake.jpg" alt="Pancakes">
-			<p>Sit Amet Consectetur</p>
-		</div>
-		<div>
-			<h3>Latest Recipes</h3>
-			<img src="images/lamb-tb.jpg" alt="Lamb Dinner">
-			<img src="images/breakfast-tb.jpg" alt="Breakfast Plate">
-			<img src="images/calamari-tb.jpg" alt="Calamari Dinner">
-			<img src="images/steak-tb.jpg" alt="Steak Dinner">
-		</div>
-		<div>
-			<h3>Cuisines</h3>
-			<p>American (95)</p>
-			<p>Asian (33)</p>
-			<p>Cambodian (3)</p>
-			<p>Chinese (281)</p>
-			<p>Filipino (8)</p>
-			<p>French (40)</p>
-			<p>German (7)</p>
-			<p>Greek (29)</p>
-			<p>Indian (44)</p>
-			<p>Italian (60)</p>
-			<p>Jamaican (7)</p>
-			<p>Japanese (202)</p>
-			<p>Korean (120)</p>
-			<p>Malaysian (12)</p>
-			<p>Mediterranean (9)</p>
-			<p>Mexican (25)</p>
-			<p>Southern (14)</p>
-		</div>
-		<div>
-			<h2>Lorem Ipsum Dolor Sit Amet</h2>
-			<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
-			<img src="images/pasta.jpg" alt="Seafood Pasta">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt nisi eius asperiam sint.</p>
-			<button id="myBtn">Read more...</button>
-		</div>
-		<div>
-			<h2>Vel, Eaque Quisquam Sit Amet</h2>
-			<p>Posted by Mike Lee on Monday, July 29, 2013</p>
-			<img src="images/ramen.jpg" alt="Ramen Soup">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illum odio commodi nesciunt nisi eius asperiam sint.</p>
-			<button id="myBtn">Read more...</button>
-		</div>
-		<div>
-			<button></button>
-			<p>Older Posts</p>
-		</div>
-	</main>
-	<footer>
-		<p>&copy; 2013 Site designed by Michael Lee, coded by Seraphina White. For educational purpose only. Image <a href="#0">credits.</a></p>
-	</footer>
+		</main>
+		<footer>
+			<p>&copy; 2013 Site designed by Michael Lee, coded by Seraphina White. For educational purpose only. Image <a href="#0">credits.</a></p>
+		</footer>
 
 
 
@@ -142,7 +181,7 @@
 
 
 
-</div>
+	</div>
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
