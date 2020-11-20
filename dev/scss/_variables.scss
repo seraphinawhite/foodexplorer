@@ -6,5 +6,8 @@ $darkblue: #005991;
 $siteWidth: 1000px;
 
 // Breakpoints
-$mobileLarge: 330px;
-$mobile: 500px;
+$mobileLarge: 330px; //logo changes from small to large
+$tabletSmall: 500px; //hamburger menu disappears food explorer then search bar with nav underneath (no social)
+$tabletMedium: 670px; // 3 top pictures go from column to grid
+$tabletLarge:700px; // socials appear to the right of search bar
+$desktop: 770px; // go to desktop view 

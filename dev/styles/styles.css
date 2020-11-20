@@ -19,22 +19,24 @@ img {
   height: auto;
 }
 
-#deskHead {
-  display: none;
-}
-
-/*.deskHead{
-
-    display: none;
-
-
-}*/
 body {
   background-image: url(../images/bg.jpg);
 }
 
-.wrapper {
+.head {
   background-color: #fff;
+}
+
+.show header nav {
+  /* let javascript
+  enable/disable this rule which 
+  will toggle display of the nav
+  */
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
   margin: 0 auto;
   max-width: 1000px;
 }
