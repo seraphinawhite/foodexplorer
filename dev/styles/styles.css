@@ -19,6 +19,32 @@ img {
   height: auto;
 }
 
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav, .nav-links, .social-links, .mobile-search {
+  display: none;
+}
+
+.desktop-search {
+  display: none;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
 body {
   background-image: url(../images/bg.jpg);
 }
@@ -59,8 +85,21 @@ body {
 .cuisines {
   display: flex;
 }
+.cuisines ul {
+  padding: 0px;
+  margin: 0px;
+}
+.cuisines ul li {
+  padding-bottom: 15px;
+}
+.cuisines .cuisine-one {
+  padding-left: 5px;
+}
 .cuisines .cuisine-two {
   padding-left: 30px;
+}
+.cuisines .item {
+  list-style-type: none;
 }
 
 .recipe-one, .recipe-three {

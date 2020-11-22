@@ -7,3 +7,31 @@
 //     }
 // }
 
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .topnav, .nav-links, .social-links, .mobile-search {
+    display: none;
+  }
+
+  .desktop-search{
+
+    display: none;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .head{
+
+      display: flex;
+      justify-content: space-between;
+  }

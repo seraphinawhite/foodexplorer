@@ -51,11 +51,35 @@ body{
 
     display: flex;
 
+    ul{
+        padding: 0px;
+        margin: 0px;
+
+        li{
+
+            padding-bottom: 15px;
+        }
+    }
+
+    .cuisine-one{
+        
+        padding-left: 5px;
+
+    }
+
     .cuisine-two{
 
         padding-left: 30px;
+
+    }
+
+    .item{
+
+        list-style-type: none;
+        
     }
 }
+
 .recipe-one, .recipe-three {
 
     display: flex;

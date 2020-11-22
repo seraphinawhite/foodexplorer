@@ -18,46 +18,54 @@
 	<div class="wrapper">
 		<header>
 	<!-- Put your HTML code here... -->
-			<div class="mobNav">
 				<div class="head">
+					
 					<a href="index.html">
 						<picture>
 							<source media="(max-width: 360px)" srcset="images/small-logo.jpg">
 							<img src="images/logo.png" alt="Food Explorer Logo">
 						</picture>
 					</a>
-				<div class="search-bar">
-					<div class="search-bar mobile-search">
-						<input type="text" placeholder="Search.." >
-						<img src="images/search.png" alt="Search Button">
+					<div class="search-bar">
+						<div class="search-bar desktop-search">
+							<input type="text" placeholder="Search.." >
+							<img src="images/search.png" alt="Search Button">
+						</div>
 					</div>
-
-					<div class="social-links social-links-mobile">
+					<!-- <div class="social-links social-links-mobile">
 						<a href="#" class="fa fa-facebook"></a>
 						<a href="#" class="fa fa-google"></a>
 						<a href="#" class="fa fa-twitter"></a>
-					</div>
-					<nav>
-						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">About</a></li>
-							<li><a href="">Reviews</a></li>
-							<li><a href="">Recipes</a></li>
-							<li><a href="">Contact</a></li>
-						</ul>
-					</nav>
-					<div class="social-links social-links-mobile">
-						<a href="#" class="fa fa-facebook"></a>
-						<a href="#" class="fa fa-google"></a>
-						<a href="#" class="fa fa-twitter"></a>
-					</div>
-
-					<!-- <a href="javascript:void(0);" class="btn-main-nav" id="btn-main-nav" onclick="myFunction()"> Include JS and edit line accordingly -->
-						<img src="images/menu.png" alt="Menu">
+					</div> -->
+					<div class="top-nav">
+						<div class="search-bar">
+							<div class="search-bar mobile-search">
+								<input type="text" placeholder="Search.." >
+								<img src="images/search.png" alt="Search Button">
+							</div>
+						<div class="nav-links">
+							<nav>
+								<ul>
+									<li><a href="">Home</a></li>
+									<li><a href="">About</a></li>
+									<li><a href="">Reviews</a></li>
+									<li><a href="">Recipes</a></li>
+									<li><a href="">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="social-links social-links-mobile">
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-google"></a>
+							<a href="#" class="fa fa-twitter"></a>
+						</div>
+						<a href="javascript:void(0);" class="btn-main-nav icon" id="btn-main-nav" 
+						onclick="myFunction()"> 
+							<img src="images/menu.png" alt="Menu">
 						</a>
+					</div>
 				</div>
-
-			</div>
+				</div>
 			<!-- <div class="deskHead">
 				<a href="#" class="fa fa-facebook"></a>
 				<a href="#" class="fa fa-google"></a>
@@ -94,7 +102,6 @@
 					<p>Sit Amet Consectetur</p>
 				</div>
 			</div>
-			
 				<div class="recipe-wrap">
 					<div class="recipe-title">
 						<h3>Latest Recipes</h3>
@@ -123,7 +130,19 @@
 					</div>
 					<div class="cuisines">
 						<div class="cuisine-one">
-							<p>American (95)</p>
+							<ul>
+
+								<li class="item">American (95)</li>
+								<li class="item">Chinese (281)</li>
+								<li class="item">Filipino (8)</li>
+								<li class="item">German (7)</li>
+								<li class="item">Indian (44)</li>
+								<li class="item">Jamaican (7)</li>
+								<li class="item">Korean (120)</li>
+								<li class="item">Mediterranean (9)</li>
+								<li class="item">Southern (14)</li>
+							</ul>
+							<!-- <p>American (95)</p>
 							<p>Cambodian (3)</p>
 							<p>Filipino (8)</p>
 							<p>German (7)</p>
@@ -131,18 +150,27 @@
 							<p>Jamaican (7)</p>
 							<p>Korean (120)</p>
 							<p>Mediterranean (9)</p>
-							<p>Southern (14)</p>
+							<p>Southern (14)</p> -->
 						</div>	
 						<div class="cuisine-two">
-							<p>Asian (33)</p>
+							<ul>
+								<li class="item">Asian (33)</li>
+								<li class="item">Chinese (281)</li>
+								<li class="item">French (40)</li>
+								<li class="item">Greek (29)</li>
+								<li class="item">Italian (60)</li>
+								<li class="item">Japanese (60)</li>
+								<li class="item">Malaysian (12)</li>
+								<li class="item">Mexican (25)</li>
+							</ul>
+							<!-- <p>Asian (33)</p>
 							<p>Chinese (281)</p>
 							<p>French (40)</p>
 							<p>Greek (29)</p>
 							<p>Italian (60)</p>
 							<p>Japanese (202)</p>
 							<p>Malaysian (12)</p>
-							<p>Mexican (25)</p>
-
+							<p>Mexican (25)</p> -->
 						</div>
 					</div>
 				</div>
@@ -172,7 +200,7 @@
 			</div>
 		</main>
 		<footer>
-			<p>&copy; 2013 Site designed by Michael Lee, coded by Seraphina White. For educational purpose only. Image <a href="#0">credits.</a></p>
+			<p>&copy; 2013 Site designed by Michael Lee, coded by Seraphina White. For educational purpose only. Image credits.</p>
 		</footer>
 
 
