@@ -10,10 +10,10 @@
 
 .topnav {
     overflow: hidden;
-    position: relative;
+    // position: relative;
   }
 
-  .topnav, .nav-links, .social-links, .mobile-search {
+  .topnav, #nav-links, #socials, #search {
     display: none;
   }
 
@@ -24,7 +24,7 @@
 
   .topnav a.icon {
     display: block;
-    position: absolute;
+    // position: absolute;
     right: 0;
     top: 0;
   }

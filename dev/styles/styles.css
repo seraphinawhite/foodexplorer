@@ -129,7 +129,7 @@ body {
 }
 .food-one p, .food-two p, .food-three p {
   position: absolute;
-  bottom: 2px;
+  bottom: 4px;
   color: white;
   margin: 0px;
   text-transform: uppercase;
@@ -147,6 +147,13 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+@media (min-width: 770px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
 }
 
 .food-wrap {
