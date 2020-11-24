@@ -55,6 +55,7 @@ body{
 .cuisines{
 
     display: flex;
+    flex-wrap: wrap;
 
     ul{
         padding: 0px;
@@ -74,7 +75,7 @@ body{
 
     .cuisine-two{
 
-        padding-left: 30px;
+        //padding-left: 30px;
 
     }
 

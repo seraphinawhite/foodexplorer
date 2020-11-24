@@ -87,6 +87,7 @@ body {
 
 .cuisines {
   display: flex;
+  flex-wrap: wrap;
 }
 .cuisines ul {
   padding: 0px;
@@ -97,9 +98,6 @@ body {
 }
 .cuisines .cuisine-one {
   padding-left: 5px;
-}
-.cuisines .cuisine-two {
-  padding-left: 30px;
 }
 .cuisines .item {
   list-style-type: none;
