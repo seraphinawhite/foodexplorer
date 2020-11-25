@@ -21,10 +21,9 @@ img {
 
 .topnav {
   overflow: hidden;
-  position: relative;
 }
 
-.topnav, .nav-links, .social-links, .mobile-search {
+.topnav, #nav-links, #socials, #search {
   display: none;
 }
 
@@ -34,7 +33,6 @@ img {
 
 .topnav a.icon {
   display: block;
-  position: absolute;
   right: 0;
   top: 0;
 }
@@ -42,6 +40,87 @@ img {
 .head {
   display: flex;
   justify-content: space-between;
+  padding: 5px;
+}
+
+#nav-links ul {
+  text-align: center;
+  padding: 0;
+}
+
+.nav-li {
+  list-style-type: none;
+  background-color: #1a71a9;
+  padding: 10px;
+  border: 1px solid #005991;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 50px;
+}
+
+.social-links {
+  background-color: white;
+  text-align: center;
+}
+.social-links .fa {
+  text-decoration: none;
+  color: #1a71a9;
+  font-size: 2em;
+  padding: 5px;
+}
+
+.nav-a:hover {
+  color: #1a71a9;
+}
+
+.nav-li:hover {
+  background-color: #fff;
+}
+
+.fa:hover {
+  color: #e9e9e9;
+  transition: 0.5s ease;
+}
+
+#search input {
+  border: none;
+  border-radius: 5%;
+  background-color: #e9e9e9;
+  padding: 3px 15px 3px 2px;
+}
+
+@media (min-width: 500px) {
+  .top-nav, .btn-main-nav {
+    display: none;
+  }
+}
+
+.desktop-search {
+  display: block;
+}
+
+.desk-nav-li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 40px;
+}
+
+.desk-nav-a {
+  text-decoration: none;
+  color: white;
+}
+
+.desk-nav {
+  background-color: #1a71a9;
+  padding: 1px;
+}
+
+.ul-desk-nav {
+  margin: 10px 5px;
 }
 
 body {

@@ -11,6 +11,7 @@
 .topnav {
     overflow: hidden;
     // position: relative;
+  
   }
 
   .topnav, #nav-links, #socials, #search {
@@ -33,4 +34,122 @@
 
       display: flex;
       justify-content: space-between;
+      padding: 5px;
+
   }
+
+
+#nav-links{
+
+  ul{
+
+    text-align: center;
+    padding: 0;
+  }
+
+}
+
+  .nav-li{
+
+    list-style-type: none;
+    background-color: $lightBlue;
+    padding: 10px;
+    border: 1px solid $darkBlue;
+  }
+
+ .nav-a{
+
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 50px;
+  
+ }
+
+ .social-links{
+
+  background-color: white;
+  text-align: center;
+
+  .fa{
+
+    text-decoration: none;
+    color: $lightBlue;
+    font-size: 2em;
+    padding: 5px;
+    // position: relative;
+
+  }
+ }
+
+ .nav-a:hover{
+  
+  color: $lightBlue;
+  
+ }
+
+ .nav-li:hover{
+
+  background-color: #fff;
+ }
+
+ .fa:hover{
+  color: $lightGrey;
+  transition: .5s ease;
+  // position: absolute;
+  // width: 100%;
+  // height: 100%;
+  // top: 0;
+  // left: 0;
+ }
+
+ #search{
+ 
+  input{
+
+    border: none;
+    border-radius: 5%;
+    background-color:$lightGrey;
+    padding: 3px 15px 3px 2px ;
+  }
+ }
+
+ .top-nav, .btn-main-nav{
+
+  @media (min-width:$tabletSmall){
+
+    display: none;
+  }
+ }
+
+ .desktop-search{
+
+  display: block;
+}
+
+.desk-nav-li{
+
+  list-style-type: none;
+  display: inline;
+  padding-right: 40px;
+}
+
+.desk-nav-a{
+
+  text-decoration: none;
+  color: white;
+  
+}
+
+.desk-nav{
+
+  background-color: $lightBlue;
+  padding: 1px;
+
+}
+
+.ul-desk-nav{
+
+  margin: 10px 5px;
+}
+
