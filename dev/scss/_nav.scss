@@ -18,10 +18,10 @@
     display: none;
   }
 
-  .desktop-search{
+  // .desktop-search{
 
-    display: none;
-  }
+  //   display: none;
+  // }
 
   .topnav a.icon {
     display: block;
@@ -145,7 +145,7 @@
 
     display: block;
 
-    .desktop-search{
+    #dsk-search{
 
       display: block;
     }
@@ -175,6 +175,18 @@
       padding: 0;
       display: flex;
       justify-content: space-evenly;
+    }
+
+    .desk-nav-li:hover{
+
+      background-color: white;
+    }
+
+    .desk-nav-a:hover{
+
+
+      color: $lightBlue;
+
     }
   }
 }
