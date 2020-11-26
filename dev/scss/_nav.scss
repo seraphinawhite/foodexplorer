@@ -11,7 +11,7 @@
 .topnav {
     overflow: hidden;
     // position: relative;
-  
+
   }
 
   .topnav, #nav-links, #socials, #search {
@@ -63,13 +63,14 @@
   color: white;
   cursor: pointer;
   padding: 10px 50px;
-  
+
  }
 
  .social-links{
 
   background-color: white;
   text-align: center;
+  border: 1px solid $lightBlue;
 
   .fa{
 
@@ -83,9 +84,9 @@
  }
 
  .nav-a:hover{
-  
+
   color: $lightBlue;
-  
+
  }
 
  .nav-li:hover{
@@ -104,15 +105,25 @@
  }
 
  #search{
- 
+
+  // position: relative;
+
   input{
 
     border: none;
     border-radius: 5%;
     background-color:$lightGrey;
-    padding: 3px 15px 3px 2px ;
+    padding: 10px;
+    width: 100%;
   }
  }
+
+//  #search-btn{
+
+//   position: absolute;
+//   left: 100%;
+//   top: 50%;
+//  }
 
  .top-nav, .btn-main-nav{
 
@@ -121,35 +132,49 @@
     display: none;
   }
  }
+ .desktop-nav{
 
- .desktop-search{
+  display: none;
+ }
 
-  display: block;
+
+
+.desktop-nav{
+
+  @media (min-width: $tabletSmall){
+
+    display: block;
+
+    .desktop-search{
+
+      display: block;
+    }
+
+    .desk-nav-li{
+
+      list-style-type: none;
+    }
+
+    .desk-nav-a{
+
+      text-decoration: none;
+      color: white;
+
+    }
+
+    .desk-nav{
+
+      background-color: $lightBlue;
+      padding: 1px;
+
+    }
+
+    .ul-desk-nav{
+
+      margin: 5px;
+      padding: 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
 }
-
-.desk-nav-li{
-
-  list-style-type: none;
-  display: inline;
-  padding-right: 40px;
-}
-
-.desk-nav-a{
-
-  text-decoration: none;
-  color: white;
-  
-}
-
-.desk-nav{
-
-  background-color: $lightBlue;
-  padding: 1px;
-
-}
-
-.ul-desk-nav{
-
-  margin: 10px 5px;
-}
-

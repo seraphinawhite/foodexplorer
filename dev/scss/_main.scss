@@ -136,3 +136,29 @@ body{
     }
 }
 
+.banner-food{
+
+    @media (min-width: $tabletMedium){
+
+        display: grid;
+        grid-template-rows: 50px 1fr 30px;
+        grid-template-areas: "one one
+                                two three";
+     
+
+    }
+
+    .food-one{
+
+        grid-area: one;
+    }
+    .food-two{
+
+        grid-area: two;
+    }
+    .food-three{
+
+        grid-area: three;
+    }
+}
+
