@@ -27,10 +27,6 @@ img {
   display: none;
 }
 
-.desktop-search {
-  display: none;
-}
-
 .topnav a.icon {
   display: block;
   right: 0;
@@ -46,6 +42,7 @@ img {
 #nav-links ul {
   text-align: center;
   padding: 0;
+  margin: 0;
 }
 
 .nav-li {
@@ -97,6 +94,11 @@ img {
   padding: 10px;
   width: 100%;
 }
+#search #search-btn {
+  position: absolute;
+  right: 3%;
+  top: 15%;
+}
 
 @media (min-width: 500px) {
   .top-nav, .btn-main-nav {
@@ -104,15 +106,36 @@ img {
   }
 }
 
+#dsk-search {
+  display: none;
+}
+@media (min-width: 500px) {
+  #dsk-search {
+    display: block;
+    position: relative;
+  }
+  #dsk-search input {
+    border: none;
+    border-radius: 5%;
+    background-color: #e9e9e9;
+    padding: 10px;
+    width: 100%;
+  }
+  #dsk-search #search-img {
+    position: absolute;
+    right: 3%;
+    top: 15%;
+  }
+}
+
 .desktop-nav {
   display: none;
 }
-
 @media (min-width: 500px) {
   .desktop-nav {
     display: block;
   }
-  .desktop-nav .desktop-search {
+  .desktop-nav #dsk-search {
     display: block;
   }
   .desktop-nav .desk-nav-li {
@@ -131,6 +154,32 @@ img {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+  }
+  .desktop-nav .desk-nav-li:hover {
+    background-color: white;
+  }
+  .desktop-nav .desk-nav-a:hover {
+    color: #1a71a9;
+    padding: 15px;
+  }
+}
+
+.desk-social-links {
+  display: none;
+}
+@media (min-width: 700px) {
+  .desk-social-links {
+    display: block;
+  }
+  .desk-social-links .fa {
+    text-decoration: none;
+    color: #1a71a9;
+    font-size: 1.5em;
+    padding: 5px;
+  }
+  .desk-social-links .fa:hover {
+    color: #e9e9e9;
+    transition: 0.5s ease;
   }
 }
 
@@ -226,6 +275,24 @@ body {
   background-color: rgba(0, 0, 0, 0.76);
   padding: 15px 2px;
   font-size: 1.5em;
+}
+
+@media (min-width: 670px) {
+  .banner-food {
+    display: grid;
+    grid-template-areas: "one one" "two three";
+  }
+}
+.banner-food .food-one {
+  grid-area: one;
+}
+.banner-food .food-two {
+  grid-area: two;
+  margin: 0;
+}
+.banner-food .food-three {
+  grid-area: three;
+  margin: 0;
 }
 
 .head {

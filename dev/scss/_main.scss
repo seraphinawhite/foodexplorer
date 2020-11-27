@@ -141,9 +141,8 @@ body{
     @media (min-width: $tabletMedium){
 
         display: grid;
-        grid-template-rows: 50px 1fr 30px;
-        grid-template-areas: "one one
-                                two three";
+        grid-template-areas: "one one"
+                                "two three";
      
 
     }
@@ -155,10 +154,12 @@ body{
     .food-two{
 
         grid-area: two;
+        margin: 0;
     }
     .food-three{
 
         grid-area: three;
+        margin: 0;
     }
 }
 
