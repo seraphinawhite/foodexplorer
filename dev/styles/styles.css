@@ -193,6 +193,7 @@ body {
 .food-content h2, .cuisines h2 {
   margin-bottom: 2px;
   color: #005991;
+  text-transform: uppercase;
 }
 .food-content .sub-title, .cuisines .sub-title {
   margin-bottom: 35px;
@@ -288,7 +289,6 @@ body {
 }
 .banner-food .food-two {
   grid-area: two;
-  margin: 0;
 }
 .banner-food .food-three {
   grid-area: three;
@@ -297,6 +297,15 @@ body {
 
 .head {
   background-color: #fff;
+}
+@media (min-width: 700px) {
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .head .left-header {
+    display: flex;
+  }
 }
 
 footer {
@@ -342,5 +351,25 @@ h1, h2, h3, h4, h5, h6 {
 nav, button {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
+}
+
+@media (min-width: 770px) {
+  .grid-desktop {
+    display: grid;
+    grid-template-columns: 77% 23%;
+    overflow: hidden;
+  }
+}
+.grid-desktop .banner-food {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+.grid-desktop .side-bar {
+  grid-column: 2;
+  grid-row: 1/5;
+}
+.grid-desktop .blog-post {
+  grid-column: 1;
+  grid-row: 2/5;
 }
 /*# sourceMappingURL=styles.css.map */

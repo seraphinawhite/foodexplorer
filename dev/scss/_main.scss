@@ -11,6 +11,7 @@ body{
 
     margin-bottom: 2px;
     color: $darkBlue;
+    text-transform: uppercase;
    }
 
    .sub-title{
@@ -138,6 +139,9 @@ body{
 
 .banner-food{
 
+    
+
+
     @media (min-width: $tabletMedium){
 
         display: grid;
@@ -154,7 +158,7 @@ body{
     .food-two{
 
         grid-area: two;
-        margin: 0;
+        
     }
     .food-three{
 
@@ -162,4 +166,6 @@ body{
         margin: 0;
     }
 }
+
+
 

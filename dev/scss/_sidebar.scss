@@ -1,0 +1,26 @@
+.grid-desktop{
+
+ @media (min-width: $desktop){
+
+        display: grid;
+        grid-template-columns: 77% 23%;
+        overflow: hidden;
+ }
+
+    .banner-food{
+
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+
+    .side-bar{
+
+        grid-column: 2;
+        grid-row: 1/5;
+    }
+
+    .blog-post{
+        grid-column: 1;
+        grid-row: 2/5;
+    }
+ }

@@ -1,13 +1,18 @@
 .head{
 
     background-color: #fff;
+
+    @media (min-width: $tabletLarge){
+
+  
+    display: flex;
+    justify-content: space-between;
+
+    .left-header{
+
+        display: flex;
+    }
 }
 
-// .show header nav {
-//     /* let javascript
-//     enable/disable this rule which 
-//     will toggle display of the nav
-//     */
-//     display: block;
-//     width: 100%;
-// }
+
+}
