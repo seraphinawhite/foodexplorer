@@ -147,7 +147,7 @@ img {
   }
   .desktop-nav .desk-nav {
     background-color: #1a71a9;
-    padding: 1px;
+    padding: 5px;
   }
   .desktop-nav .ul-desk-nav {
     margin: 5px;
@@ -239,18 +239,23 @@ body {
 .cuisines .cuisine-one {
   padding-left: 5px;
 }
+@media (max-width: 770px) {
+  .cuisines .cuisine-two {
+    padding-left: 30px;
+  }
+}
 .cuisines .item {
   list-style-type: none;
 }
 
 .recipe-one, .recipe-three {
   display: flex;
-  background-color: #e9e9e9;
+  background-color: white;
 }
 
 .recipe-two, .recipe-four {
   display: flex;
-  background-color: white;
+  background-color: #e9e9e9;
 }
 
 .recipe-one, .recipe-three, .recipe-two, .recipe-four {
@@ -263,6 +268,11 @@ body {
 .recipe-one p, .recipe-three p, .recipe-two p, .recipe-four p {
   margin-top: 35px;
 }
+@media (min-width: 770px) {
+  .recipe-one p, .recipe-three p, .recipe-two p, .recipe-four p {
+    margin-top: 25px;
+  }
+}
 
 .food-one, .food-two, .food-three {
   position: relative;
@@ -274,6 +284,7 @@ body {
   margin: 0px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.76);
+  width: 100%;
   padding: 15px 2px;
   font-size: 1.5em;
 }
@@ -286,17 +297,20 @@ body {
 }
 .banner-food .food-one {
   grid-area: one;
+  margin: 2px;
 }
 .banner-food .food-two {
   grid-area: two;
+  margin-right: 2px;
 }
 .banner-food .food-three {
   grid-area: three;
-  margin: 0;
+  margin-right: 2px;
 }
 
 .head {
   background-color: #fff;
+  width: 100%;
 }
 @media (min-width: 700px) {
   .head {
@@ -356,7 +370,7 @@ nav, button {
 @media (min-width: 770px) {
   .grid-desktop {
     display: grid;
-    grid-template-columns: 77% 23%;
+    grid-template-columns: 70% 25%;
     overflow: hidden;
   }
 }
