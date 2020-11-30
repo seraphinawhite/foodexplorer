@@ -76,7 +76,23 @@
     color: $lightBlue;
     font-size: 2em;
     padding: 5px;
+   
   
+
+  }
+ }
+
+ .social-links-hover{
+
+  background-color: white;
+  text-align: center;
+  border: 1px solid $lightBlue;
+
+  .fa{
+    text-decoration: none;
+    color: $lightGrey;
+    font-size: 2em;
+    padding: 5px;
 
   }
  }
@@ -95,6 +111,7 @@
  .fa:hover{
   color: $lightGrey;
   transition: .5s ease;
+  overflow: hidden;
  }
 
  #search{
@@ -118,6 +135,14 @@
 
   }
  }
+
+ 
+//  #hover-social{
+
+//   color: $lightGrey;
+  
+//  }
+
 
  
 
@@ -159,12 +184,39 @@
  }
 }
 
+#dsk-search-nav{
 
+  display: none;
+
+  @media (min-width: $desktop){
+
+    display: block;
+    position: absolute;
+    left: 80%;
+    top: 2%;
+
+    input{
+
+      border: none;
+      border-radius: 2%;
+      background-color:$lightGrey;
+      padding: 10px;
+      width: 100%;
+    }
+  
+    #search-img{
+      position: absolute;
+     right: 3%;
+     top: 14%;
+  
+    }
+  }
+}
 
 .desktop-nav{
 
   display: none;
-
+  position: relative;
   @media (min-width: $tabletSmall){
 
     display: block;

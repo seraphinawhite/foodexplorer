@@ -71,6 +71,18 @@ img {
   padding: 5px;
 }
 
+.social-links-hover {
+  background-color: white;
+  text-align: center;
+  border: 1px solid #1a71a9;
+}
+.social-links-hover .fa {
+  text-decoration: none;
+  color: #e9e9e9;
+  font-size: 2em;
+  padding: 5px;
+}
+
 .nav-a:hover {
   color: #1a71a9;
 }
@@ -82,6 +94,7 @@ img {
 .fa:hover {
   color: #e9e9e9;
   transition: 0.5s ease;
+  overflow: hidden;
 }
 
 #search {
@@ -128,8 +141,33 @@ img {
   }
 }
 
+#dsk-search-nav {
+  display: none;
+}
+@media (min-width: 770px) {
+  #dsk-search-nav {
+    display: block;
+    position: absolute;
+    left: 80%;
+    top: 2%;
+  }
+  #dsk-search-nav input {
+    border: none;
+    border-radius: 2%;
+    background-color: #e9e9e9;
+    padding: 10px;
+    width: 100%;
+  }
+  #dsk-search-nav #search-img {
+    position: absolute;
+    right: 3%;
+    top: 14%;
+  }
+}
+
 .desktop-nav {
   display: none;
+  position: relative;
 }
 @media (min-width: 500px) {
   .desktop-nav {
