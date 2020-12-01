@@ -15,7 +15,16 @@
 
         display: flex;
     }
+
+    @media (min-width: $desktop){
+
+        #dsk-search{
+
+            display: none;
+        }
+    }
 }
+
 
 
 }

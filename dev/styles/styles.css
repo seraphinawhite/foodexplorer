@@ -23,7 +23,7 @@ img {
   overflow: hidden;
 }
 
-.topnav, #nav-links, #socials, #search {
+.topnav, #nav-links, #search {
   display: none;
 }
 
@@ -71,12 +71,109 @@ img {
   padding: 5px;
 }
 
-.social-links-hover {
+.facebook {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+.facebook:hover .blue {
+  top: -40px;
+}
+.facebook:hover .grey {
+  top: 0px;
+}
+.facebook .blue {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.facebook .grey {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+.facebook .grey:hover {
+  top: 0px;
+}
+.facebook a {
+  transition: 0.5s ease;
+}
+.facebook .grey {
+  color: #e9e9e9;
+}
+
+.google {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.google:hover .blue {
+  top: -40px;
+}
+.google:hover .grey {
+  top: 0px;
+}
+.google .blue {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.google .grey {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+.google .grey:hover {
+  top: 0px;
+}
+.google a {
+  transition: 0.5s ease;
+}
+.google .grey {
+  color: #e9e9e9;
+}
+
+.twitter {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.twitter:hover .blue {
+  top: -40px;
+}
+.twitter:hover .grey {
+  top: 0px;
+}
+.twitter .blue {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.twitter .grey {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+.twitter .grey:hover {
+  top: 0px;
+}
+.twitter a {
+  transition: 0.5s ease;
+}
+.twitter .grey {
+  color: #e9e9e9;
+}
+
+.socials {
   background-color: white;
   text-align: center;
   border: 1px solid #1a71a9;
 }
-.social-links-hover .fa {
+.socials .fa {
   text-decoration: none;
   color: #e9e9e9;
   font-size: 2em;
@@ -89,12 +186,6 @@ img {
 
 .nav-li:hover {
   background-color: #fff;
-}
-
-.fa:hover {
-  color: #e9e9e9;
-  transition: 0.5s ease;
-  overflow: hidden;
 }
 
 #search {
@@ -149,7 +240,7 @@ img {
     display: block;
     position: absolute;
     left: 80%;
-    top: 2%;
+    top: 6%;
   }
   #dsk-search-nav input {
     border: none;
@@ -184,21 +275,25 @@ img {
     color: white;
   }
   .desktop-nav .desk-nav {
-    background-color: #1a71a9;
+    background-color: #005991;
     padding: 5px;
+    width: 100%;
+  }
+  .desktop-nav .desktop-nav {
+    background-color: #005991;
   }
   .desktop-nav .ul-desk-nav {
     margin: 5px;
-    padding: 0;
+    padding: 5px;
     display: flex;
     justify-content: space-evenly;
   }
   .desktop-nav .desk-nav-li:hover {
     background-color: white;
+    display: block;
   }
   .desktop-nav .desk-nav-a:hover {
     color: #1a71a9;
-    padding: 15px;
   }
 }
 
@@ -317,7 +412,7 @@ body {
 }
 .food-one p, .food-two p, .food-three p {
   position: absolute;
-  bottom: 4px;
+  bottom: 1px;
   color: white;
   margin: 0px;
   text-transform: uppercase;
@@ -332,6 +427,11 @@ body {
     display: grid;
     grid-template-areas: "one one" "two three";
   }
+}
+.banner-food img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .banner-food .food-one {
   grid-area: one;
@@ -357,6 +457,11 @@ body {
   }
   .head .left-header {
     display: flex;
+  }
+}
+@media (min-width: 700px) and (min-width: 770px) {
+  .head #dsk-search {
+    display: none;
   }
 }
 

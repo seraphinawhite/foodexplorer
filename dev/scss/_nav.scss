@@ -1,20 +1,10 @@
-// .deskHead{
-
-//     display: none;
-
-//     @media (min-width: $tabletSmall) {
-//         display: block
-//     }
-// }
-
-
 .topnav {
     overflow: hidden;
-    // position: relative;
+
 
   }
 
-  .topnav, #nav-links, #socials, #search {
+  .topnav, #nav-links, #search {
     display: none;
   }
 
@@ -22,7 +12,6 @@
 
   .topnav a.icon {
     display: block;
-    // position: absolute;
     right: 0;
     top: 0;
   }
@@ -33,7 +22,9 @@
       justify-content: space-between;
       padding: 5px;
 
+
   }
+
 
 
 #nav-links{
@@ -69,6 +60,7 @@
   background-color: white;
   text-align: center;
   border: 1px solid $lightBlue;
+ 
 
   .fa{
 
@@ -76,26 +68,204 @@
     color: $lightBlue;
     font-size: 2em;
     padding: 5px;
-   
-  
+
+
 
   }
  }
 
- .social-links-hover{
 
-  background-color: white;
-  text-align: center;
-  border: 1px solid $lightBlue;
+ .facebook{
 
-  .fa{
-    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    
+
+    &:hover{
+
+      .blue{
+
+          top: -40px;
+
+
+      }
+      .grey{
+
+        top: 0px;
+      }
+    }
+
+
+    .blue{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+
+    }
+
+   .grey{
+
+    position: absolute;
+    top: 40px;
+    left: 0px;
+
+    &:hover{
+
+      top: 0px;
+    }
+
+
+
+
+   }
+
+   a{
+
+    transition: .5s ease;
+   }
+
+    .grey{
+
+      color: $lightGrey;
+
+    }
+}
+
+.google{
+
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover{
+
+    .blue{
+
+        top: -40px;
+
+
+    }
+    .grey{
+
+      top: 0px;
+    }
+  }
+
+
+  .blue{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+  }
+
+ .grey{
+
+  position: absolute;
+  top: 40px;
+  left: 0px;
+
+  &:hover{
+
+    top: 0px;
+  }
+
+
+
+
+ }
+
+ a{
+
+  transition: .5s ease;
+ }
+
+  .grey{
+
     color: $lightGrey;
-    font-size: 2em;
-    padding: 5px;
 
   }
+}
+
+.twitter{
+
+  height: 40px;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover{
+
+    .blue{
+
+        top: -40px;
+
+
+    }
+    .grey{
+
+      top: 0px;
+    }
+  }
+
+
+  .blue{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+  }
+
+ .grey{
+
+  position: absolute;
+  top: 40px;
+  left: 0px;
+
+  &:hover{
+
+    top: 0px;
+  }
+
  }
+
+ a{
+
+  transition: .5s ease;
+ }
+
+  .grey{
+
+    color: $lightGrey;
+
+  }
+}
+
+// .social-links-mobile{
+
+//  display: flex;
+//   flex-direction: row;
+// }
+
+
+ .socials{
+
+ background-color: white;
+ text-align: center;
+ border: 1px solid $lightBlue;
+
+ .fa{
+   text-decoration: none;
+   color: $lightGrey;
+   font-size: 2em;
+   padding: 5px;
+
+ }
+}
 
  .nav-a:hover{
 
@@ -106,12 +276,6 @@
  .nav-li:hover{
 
   background-color: #fff;
- }
-
- .fa:hover{
-  color: $lightGrey;
-  transition: .5s ease;
-  overflow: hidden;
  }
 
  #search{
@@ -135,16 +299,6 @@
 
   }
  }
-
- 
-//  #hover-social{
-
-//   color: $lightGrey;
-  
-//  }
-
-
- 
 
  .top-nav, .btn-main-nav{
 
@@ -193,7 +347,7 @@
     display: block;
     position: absolute;
     left: 80%;
-    top: 2%;
+    top: 6%;
 
     input{
 
@@ -203,12 +357,12 @@
       padding: 10px;
       width: 100%;
     }
-  
+
     #search-img{
       position: absolute;
      right: 3%;
      top: 14%;
-  
+
     }
   }
 }
@@ -240,31 +394,49 @@
 
     .desk-nav{
 
-      background-color: $lightBlue;
+      background-color: $darkBlue;
       padding: 5px;
+      width: 100%;
 
+    }
+
+    .desktop-nav{
+
+      background-color: $darkBlue;
     }
 
     .ul-desk-nav{
 
       margin: 5px;
-      padding: 0;
+      padding: 5px;
       display: flex;
       justify-content: space-evenly;
+     
+      
     }
+
+    // .desk-nav-li{
+
+    //   padding-right: 50px;
+    // }
 
     .desk-nav-li:hover{
 
-      background-color: white;
+   background-color: white;
+      display: block;
 
+      
     }
 
     .desk-nav-a:hover{
 
 
       color: $lightBlue;
-      padding: 15px;
+
       
+   
+      
+
 
     }
   }
@@ -285,7 +457,7 @@
       color: $lightBlue;
       font-size: 1.5em;
       padding: 5px;
-    
+
     }
 
     .fa:hover{

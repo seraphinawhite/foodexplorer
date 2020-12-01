@@ -135,7 +135,7 @@ body{
     p{
 
         position: absolute;
-        bottom: 4px;
+        bottom: 1px;
         //left: 3px;
         color: white;
         margin: 0px;
@@ -147,12 +147,6 @@ body{
         
     }
 
-    // img{
-
-    //     // max-width: 100%;
-    //     // height: auto;
-    //     // display: block;
-    // }
 }
 
 .banner-food{
@@ -165,7 +159,12 @@ body{
      
 
     }
+    img{
 
+        width: 100%;
+        height: auto;
+        display: block;
+    }
     .food-one{
 
         grid-area: one;
